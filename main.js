@@ -14,12 +14,15 @@ let buttonPlay = document.getElementById("play");
 
 buttonPlay.addEventListener('click',
     function(){
+        //variabili inizializzate all'interno dell'evento di click
         let level = document.getElementById("level").value;
         let numBox;
         let size ;
 
+        //aggiunta della classe ms_none per rendere invisibile il titolo
         htmlGridTitle.classList.add('ms_none')
 
+        //ciclo if else if per determinare il numero di box
         if(level == "Easy"){
             numBox = 100;
             size = "easy";
@@ -35,13 +38,14 @@ buttonPlay.addEventListener('click',
 
         //creazione dei quadrati nell'HTML
         for (let i = 1; i<=numBox; i++) {
-
+        //richiamo della funzione per scrivere all'interno del HTML
         const node = createGridElement(size);
 
+        //aggiunta del numero all'interno del box
         node.innerHTML += i;
 
+        //aggiunta dell'ascoltatore di eventi sui box
         node.addEventListener('click', function() {
-            console.log(this);
             this.classList.add('clicked');
         });
 

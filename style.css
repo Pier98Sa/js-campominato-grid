@@ -14,7 +14,8 @@ body {
     width: 80%;
     margin: 0 auto;
 }
-/*header*/
+
+/*HEADER*/
 header{
    background-color: #fff; 
 }
@@ -42,7 +43,7 @@ header nav {
     padding: 0 30px;
 }
 
-/*main*/
+/*MAIN*/
 #grid {
     height: 600px;
     width: 600px;
@@ -56,6 +57,7 @@ header nav {
     font-size: 26px;
 
 }
+/*box che si crea*/
 .square {
     border: solid 1px #000;
     display: flex;
@@ -63,7 +65,7 @@ header nav {
     align-items: center;
     cursor: pointer;
 }
-
+/*selettori di difficoltà*/
 .easy{
     width: calc(100% / 10);
     height: calc(100% / 10); 
@@ -86,7 +88,7 @@ header nav {
     display: none;
 }
 
-/*Footer*/
+/*FOOTER*/
 footer{
     background-color: #fff;
     position: fixed;
