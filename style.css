@@ -7,6 +7,7 @@
 
 body {
     background-color: #7fffd4;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container{
@@ -46,11 +47,15 @@ header nav {
     height: 600px;
     width: 600px;
     margin: 100px auto;
-    border: solid 1px #000;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+#grid-title{
+    font-size: 26px;
 
+}
 .square {
     border: solid 1px #000;
     display: flex;
@@ -75,6 +80,10 @@ header nav {
 /*classe che si attiva con il click sugli square*/
 .clicked {
     background-color: #6495ed;
+}
+/*classe per oscurare il titolo della sezione main*/
+.ms_none{
+    display: none;
 }
 
 /*Footer*/

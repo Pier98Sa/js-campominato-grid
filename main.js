@@ -7,7 +7,7 @@ const createGridElement = (classe) => {
 }
 /*variabili*/
 const gridElement = document.getElementById('grid');
-
+const htmlGridTitle = document.getElementById('grid-title');
 let buttonPlay = document.getElementById("play");
 
 
@@ -18,6 +18,8 @@ buttonPlay.addEventListener('click',
         let numBox;
         let size ;
 
+        htmlGridTitle.classList.add('ms_none')
+
         if(level == "Easy"){
             numBox = 100;
             size = "easy";
@@ -27,6 +29,8 @@ buttonPlay.addEventListener('click',
         }else if (level == "Crazy"){
             numBox = 49;
             size = "crazy";
+        }else{
+            alert("scegli un livello di difficoltà")
         }
 
         //creazione dei quadrati nell'HTML
