@@ -14,6 +14,9 @@ let buttonPlay = document.getElementById("play");
 
 buttonPlay.addEventListener('click',
     function(){
+        
+        //utile per resettare la griglia ad ogni click
+        gridElement.innerHTML = "";
         //variabili inizializzate all'interno dell'evento di click
         let level = document.getElementById("level").value;
         let numBox;
